@@ -5,9 +5,10 @@ const CharacterDetail = ({selectedCharacter}) => {
 
     return (
         <div className="character-detail">
-        <h3>{selectedCharacter.name}</h3>
+        <h2>{selectedCharacter.name}</h2>
         <h4>Species: {selectedCharacter.species}</h4>
-        <h4>House: {selectedCharacter.house}</h4>
+        <h4>Actor: {selectedCharacter.actor}</h4>
+        <h4><img src={selectedCharacter.image} /></h4>
         </div>
     );
 }
