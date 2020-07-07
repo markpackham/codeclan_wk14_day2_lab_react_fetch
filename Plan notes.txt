@@ -1,1 +1,7 @@
 1) MainContainer will be responsible for holding components and passing props down.
+
+
+
+
+Hierarchy
+1) MainContainer

@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import MainFooter from '../components/MainFooter';
 
 export default class MainContainer extends Component{
     render(){
         return(
-            <h1>React is working</h1>
+            <MainFooter />
         )
     }
 }
