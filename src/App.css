@@ -1,5 +1,7 @@
 body{
   padding: 1.5rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 a{
@@ -10,6 +12,38 @@ a:hover{
 
 }
 
+.main-container, .character-select, .character-detail{
+  padding: 1rem;
+}
+
+.main-container{
+  background-color: lightcoral;
+  border-color: red;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.character-select{
+  background-color: lightblue;
+  border-color: blue;
+  border-width: 3px;
+  border-style: solid;
+  z-index: 50;
+}
+
+.character-detail{
+  background-color: lemonchiffon;
+  border-color: yellow;
+  border-width: 3px;
+  border-style: solid;
+  z-index: 100;
+}
+
 .main-footer{
   padding: 1rem;
+  background-color: aquamarine;
+  border-color: green;
+  border-width: 3px;
+  border-style: solid;
+  z-index: 100;
 }

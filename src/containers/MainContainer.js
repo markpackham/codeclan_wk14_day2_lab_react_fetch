@@ -40,7 +40,7 @@ const selectedCharacter = this.state.characters.find(character =>
 
 
         return(
-            <div className="content">
+            <div className="main-container">
                 <h2>Harry Potter characters</h2>
                     <CharacterSelect 
                     characters={this.state.characters}

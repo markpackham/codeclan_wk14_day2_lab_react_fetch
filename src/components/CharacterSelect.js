@@ -4,15 +4,14 @@ const CharacterSelect = (props) => {
 
     const optionsList = props.characters.map(character =>{
     return <option value={character.actor} key={character.actor}>{character.name}</option>
-    });
+    })
 
     function handleChange(event){
-        //console.log(event.target.value);
         props.onCharacterSelected(event.target.value);
     }
 
     return (
-        <select id="character-selector" defaultValue="default" onChange={handleChange}>
+        <select className="character-select" defaultValue="default" onChange={handleChange}>
             <option disabled value="default">
                 Please select a character...
             </option>
