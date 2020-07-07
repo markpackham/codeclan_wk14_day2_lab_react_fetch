@@ -1,13 +1,14 @@
 Containers:
-1) MainContainer will be responsible for holding components and passing props down. This is added to App.js
+1) MainContainer will be responsible for holding components and passing props down. This is added to App.js, use name as key since they are unique
 
 Components:
 2) MainFooter - static text with year (mainly used to check react is running like a "hello world" statement)
-
-
+3) CharacterSelect - selected character by name, dropdown menu
+4) CharacterDetail  - display name, species & gender of selected character
 
 
 Hierarchy
 1) MainContainer
-
                 2) MainFooter
+                3) CharacterSelect
+                                    4) CharacterDetail
