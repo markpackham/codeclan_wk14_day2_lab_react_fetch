@@ -12,7 +12,7 @@ a:hover{
 
 }
 
-.main-container, .character-select, .character-detail{
+.main-container, .character-select, .character-detail, .main-header{
   padding: 1rem;
 }
 
@@ -21,6 +21,14 @@ a:hover{
   border-color: red;
   border-width: 5px;
   border-style: solid;
+}
+
+.main-header{
+  background-color: purple;
+  border-color: magenta;
+  border-width: 3px;
+  border-style: solid;
+  z-index: 50;
 }
 
 .character-select{

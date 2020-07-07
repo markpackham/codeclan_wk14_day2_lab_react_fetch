@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CharacterSelect from "../components/CharacterSelect";
 import CharacterDetail from '../components/CharacterDetail';
 import MainFooter from '../components/MainFooter';
+import MainHeader from '../components/MainHeader';
 
 export default class MainContainer extends Component{
 
@@ -41,7 +42,7 @@ const selectedCharacter = this.state.characters.find(character =>
 
         return(
             <div className="main-container">
-                <h2>Harry Potter characters</h2>
+                    <MainHeader />
                     <CharacterSelect 
                     characters={this.state.characters}
                     onCharacterSelected = {this.handleCharacterSelected}
