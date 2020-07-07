@@ -11,10 +11,10 @@ export default class MainContainer extends Component{
             characters: [],
             // all actors names are unique so should be keys
             // character names sadly have duplicates
-            selectedCharacterName: ""
+            selectedActorName: ""
         };
 
-        this.handleNameSelected = this.handleNameSelected.bind(this);
+        this.handleCharacterSelected = this.handleCharacterSelected.bind(this);
     }
 
 // make sure we can actually access the Harry Potter api
@@ -25,22 +25,23 @@ componentDidMount(){
     .then(data => this.setState({characters: data}))
 }
 
-handleNameSelected(name){
-    this.setState({selectedCharacterName: name})
+handleCharacterSelected(actorName){
+    this.setState({selectedActorName: actorName})
 }
 
     render(){
 
-const selectedCharacter = this.state.characters.find(character => {
-    return character.name === this.state.selectedCharacterName;
-})
+const selectedCharacter = this.state.characters.find(character => 
+    // return character.name === this.state.selectedCharacterName;
+    character.actor === this.state.selectedActorName)
+
 
         return(
             <div className="content">
                 <h2>Harry Potter characters</h2>
                     <CharacterSelect 
                     characters={this.state.characters}
-                    onCharacterSelected = {this.handleNameSelected}
+                    onCharacterSelected = {this.handleCharacterSelected}
                     />
                     <CharacterDetail 
                     selectedCharacter={selectedCharacter}

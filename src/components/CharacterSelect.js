@@ -3,7 +3,7 @@ import React from 'react'
 const CharacterSelect = (props) => {
 
     const optionsList = props.characters.map(character =>{
-    return <option value={character.name} key={character.actor}>{character.name}</option>
+    return <option value={character.actor} key={character.actor}>{character.name}</option>
     });
 
     function handleChange(event){

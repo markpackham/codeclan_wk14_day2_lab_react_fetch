@@ -5,8 +5,9 @@ const CharacterDetail = ({selectedCharacter}) => {
 
     return (
         <div className="character-detail">
-        <h2>{{selectedCharacter}.name}</h2>
+        <h3>{{selectedCharacter}.name}</h3>
         <h4>Species: {{selectedCharacter}.species}</h4>
+        <h4>House: {{selectedCharacter}.house}</h4>
         </div>
     );
 }
