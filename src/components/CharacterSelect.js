@@ -7,7 +7,7 @@ const CharacterSelect = (props) => {
     });
 
     function handleChange(event){
-        console.log(event.target.value);
+        //console.log(event.target.value);
         props.onCharacterSelected(event.target.value);
     }
 
