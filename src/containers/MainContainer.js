@@ -8,7 +8,8 @@ export default class MainContainer extends Component{
         super(props);
         this.state = {
             characters: [],
-            // all characters names are unique so should be keys
+            // all actors names are unique so should be keys
+            // character names sadly have duplicates
             selectedCharacterName: ""
         };
 
@@ -30,8 +31,8 @@ handleNameSelected(name){
 
     render(){
 
-const selectedName = this.state.characters.find(character => {
-    return character.name = this.state.selectedCharacterName;
+const selectedCharacter = this.state.characters.find(character => {
+    return character.name === this.state.selectedCharacterName;
 })
 
         return(
