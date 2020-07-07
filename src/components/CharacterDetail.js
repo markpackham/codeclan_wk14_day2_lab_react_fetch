@@ -8,7 +8,7 @@ const CharacterDetail = ({selectedCharacter}) => {
         <h2>{selectedCharacter.name}</h2>
         <h4>Species: {selectedCharacter.species}</h4>
         <h4>Actor: {selectedCharacter.actor}</h4>
-        <h4><img src={selectedCharacter.image} /></h4>
+        <h4><img src={selectedCharacter.image} height="400px" /></h4>
         </div>
     );
 }
