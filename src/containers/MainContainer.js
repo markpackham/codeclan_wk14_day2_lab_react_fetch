@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CharacterSelect from "../components/CharacterSelect";
+import CharacterDetail from '../components/CharacterDetail';
 import MainFooter from '../components/MainFooter';
 
 export default class MainContainer extends Component{
@@ -28,7 +29,6 @@ handleNameSelected(name){
     this.setState({selectedCharacterName: name})
 }
 
-
     render(){
 
 const selectedCharacter = this.state.characters.find(character => {
@@ -41,6 +41,9 @@ const selectedCharacter = this.state.characters.find(character => {
                     <CharacterSelect 
                     characters={this.state.characters}
                     onCharacterSelected = {this.handleNameSelected}
+                    />
+                    <CharacterDetail 
+                    selectedCharacter={selectedCharacter}
                     />
                     <MainFooter />
             </div>
