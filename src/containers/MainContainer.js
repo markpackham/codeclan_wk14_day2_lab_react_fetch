@@ -23,6 +23,9 @@ componentDidMount(){
     fetch(url)
     .then(res => res.json())
     .then(data => this.setState({characters: data}))
+    .catch((error) => {
+        console.error('Error:', error);
+    });
 }
 
 handleCharacterSelected(actorName){
