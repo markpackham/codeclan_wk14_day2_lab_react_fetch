@@ -15,8 +15,6 @@ export default class MainContainer extends Component{
             selectedActorName: ""
         };
 
-        let theYear = new Date().getFullYear();
-        console.log(theYear);
         this.handleCharacterSelected = this.handleCharacterSelected.bind(this);
     }
 

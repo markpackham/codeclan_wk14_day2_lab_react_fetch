@@ -1,5 +1,5 @@
 import React from 'react';
 
-const MainFooter = () => <div className="main-footer">Copyright 2020</div>
+const MainFooter = () => <div className="main-footer">Copyright {new Date().getFullYear()}</div>
 
 export default MainFooter;
